@@ -10,7 +10,7 @@
   <li>Menu Hamburguer</li>
 </ul>
 
-###Próximas Atualizações 
+### Próximas Atualizações 
 
 <ul>
   <li>Deixar o site responsivo em telas um pouco maiores eu só fiz pra telas muito pequenas kskskks</li>
