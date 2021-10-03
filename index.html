@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massa Strong</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <a id="logo" href="/">Massa Strong</a>
+        <nav id="nav">
+            <button id="btn-mobile">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="/">Sobre</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="/">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="img-main">
+            <img src="https://hypescience.com/wp-content/uploads/2015/10/musculos-contracao-forca.jpg" alt="">
+        </div>
+        <div class="texto-principal">
+            <p>Quer ficar realmente forte? </p> <br> <p>Então venha para Massa Strong e faça acontecer!</p>
+            
+        </div>
+        
+        <section class="container-planos">
+            <h1 class="titulo-planos">Escolha seu plano</h1>
+            <div class="planos">
+                <div class="plano1">
+                    <h3 class="titulo-plano1">Plano Frango</h3>
+                    <ul>
+                        <li><p>Acesso ilimitado a todas áreas da academia</p></li>
+                        <li><p>Aulas de Ginástica</p></li>
+                        <li><p>Área de musculação e aeróbicos</p></li>
+                        <li><p>Sem taxa de cancelamento</p></li>
+                        <li><p>Acesso ilimitado a todas áreas da academia</p></li>
+                    </ul>
+                    <button class="btn-plano1">Adquira</button>
+                </div>
+                <div class="plano2">
+                    <h3 class="titulo-plano2">Plano monstro</h3>
+                    <ul>
+                        <li><p>Acesso ilimitado a todas áreas da academia</p></li>
+                        <li><p>Aulas de Ginástica</p></li>
+                        <li><p>Área de musculação e aeróbicos</p></li>
+                        <li><p>Sem taxa de cancelamento</p></li>
+                        <li><p>Acesso ilimitado a todas áreas da academia</p></li>
+                        <li><p>Treine em qualquer unidade da academia</p></li>
+                        <li><p>Desconto em suplementos</p></li>
+                        <li><p>Cadeira de masagem</p></li>
+                        <li><p>Lorem ipusum</p></li>
+                    </ul>
+                    <button class="btn-plano1">Adquira</button>
+                </div>
+            </div>
+        </section>
+        <section class="container-calculadora">
+           <div class="background-caculadora">
+                <h1 class="titulo-calculadora">Calculadora de IMC</h1>
+                <div class="input-calculadora">
+                    <div class="Altura">
+                        <h3>Altura (cm)</h3>
+                        <input placeholder="Ex: 1,60" type="number" name="" id="altura">
+                        <div id="error-altura"></div>
+                    </div>
+                    <div>
+                        <h3>Peso (kg)</h3>
+                        <input placeholder="EX: 80,5 " type="number" name="" id="peso">
+                        <div id="error-peso"></div>
+                    </div>       
+                </div>
+                <button class="btn-calculadora" onclick="calcularIMC()">calcular</button>
+                <div id="res-calculadora">
+
+                </div>
+           </div>
+        </section>
+        <section class="container-apresentacao" id="container-apresentacao">
+            <div><h1 class="titulo-apresentacao">Um dia de treino na Massa Strong</h1></div>
+            <div class="texto-apresentacao">
+                <p>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </h3>
+                </p>
+            </div> 
+        </section>
+        <section class="container-equipamentos">
+            <h1 class="titulo-equipamentos"><p>Tudo que você precisa para treinar</p></h1>
+            <div class="equipamentos">    
+                    <img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_aulas.jpg" alt="">
+                    <img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_cardio.jpg" alt="">
+                    <img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_fitness-remote.jpg" alt="">
+                    <img src="https://cdn.smartfit.com.br/nossa-smart/img_cover_academia_musculacao.jpg" alt="">
+            </div>
+        </section>
+        <section class="info">
+            <h1 class="titulo-info">Coloque o seu email para receber informações</h1>
+            <div class="email-info">
+                <input placeholder="seuemail@gmail.com" type="email" name="txtemail" id="email">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="https://github.com/Eupou">Eupou</a>
+        <a href="">Parceiros</a>
+        <a href="">Nossa missão</a>
+        <a href="">Contato</a>
+        <a href="">Trabalhe conosco</a>
+    </footer>
+</body>
+</html>

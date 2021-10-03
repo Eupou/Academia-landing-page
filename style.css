@@ -1,0 +1,522 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    background: #024926;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    transition: transform 0.3s ease-in;
+}
+
+#menu li {
+    margin-left: 15px;
+    list-style: none;
+}
+
+#menu a {
+    padding: 16px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.container {
+    flex-wrap: wrap;
+}
+
+.img-main img {
+    width: 100vw;
+}
+
+.texto-principal {
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    color: white;
+    
+
+    font-size: 50pt;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.container-planos {
+    width: 100%;
+    height: 850px;
+    background-color: #07140d;
+    margin-top: 70px;
+}
+
+.titulo-planos {
+    margin-top: 10px;
+    text-align: center;
+    color: #e6e1e1;
+    font-size: 25pt;
+    font-family: sans-serif;
+}
+
+.planos {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+    
+    text-align: center;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    /* background-color: #fafafa; */
+}
+
+.plano1 {
+    background-color: #fafafa;
+    width: 250px;
+    height: 450px;
+
+    color: rgb(22, 22, 22);   
+    margin-right: 100px;
+    transition: 0.2s ease-in;
+}
+
+.plano1:hover {
+    transform: translateY(-15px);
+}
+
+.titulo-plano1 {
+    padding: 15px;
+    background-color: rgb(235, 228, 228);
+    font-size: 18pt;
+}
+
+.plano1 ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.plano1 ul li{
+    margin-top: 25px;
+    list-style: none;
+    
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.btn-plano1 {
+    border: none;
+    margin-top: 20px;
+    background-color: rgb(226, 226, 7);
+
+    color: white;
+    font-size: 13pt;
+    font-family: sans-serif;
+
+    font-weight: 700;
+    padding: 20px 40px 20px 40px;
+    border-radius: 8px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-plano1:hover {
+    cursor: pointer;
+    color: #fafafa;
+    background-color: rgb(233, 233, 3);
+
+    padding: 23px 43px 23px 43px;
+    font-size: 15pt;
+    margin-top: 17px;
+}
+
+.plano2 {
+    background-color: #fafafa;
+    width: 250px;
+    height: 650px;
+
+    color: rgb(22, 22, 22);   
+    margin-right: 100px;
+    transition: 0.2s ease-in;
+}
+
+.plano2:hover {
+    transform: translateY(-15px);
+}
+
+.titulo-plano2 {
+    padding: 15px;
+    background-color: rgb(241, 26, 26);
+    color: rgb(2, 2, 22);
+    font-size: 18pt;
+}
+
+.titulo-plano2 {
+    background: linear-gradient(-45deg, rgb(241, 26, 26), rgb(201, 6, 6), rgb(170, 4, 4), rgb(241, 26, 26));
+    background-size: 400% 400%;
+    animation: backgroundTransition 8s ease-in-out infinite;
+}
+
+@keyframes backgroundTransition{
+    0%{
+        background-position: 0% 80%;
+    }
+    50%{
+        background-position: 80% 100%;
+    }
+    100%{
+        background-position: 0% 90%;
+    }
+}
+
+.plano2 ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.plano2 ul li{
+    margin-top: 25px;
+    list-style: none;
+    
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.container-calculadora {
+    margin-top: 50px;
+    height: 200px; 
+    font-family: sans-serif;
+
+    
+}
+
+.titulo-calculadora {
+    text-align: center;
+}
+
+.input-calculadora {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-caculadora {
+    background-color: white;
+    padding: 140px;
+    margin: auto;
+    width: 400px;
+
+    border: 1px lightgray solid;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+    padding: 5px;
+    margin-right: 15px;
+    width: 130px;
+}
+
+.btn-calculadora {
+    margin-top: 15px;
+    margin-left: 10vw;
+    padding: 10px;
+    border: 1px lightgray solid;
+    background-color: #fafafa;
+    border-radius: 18px;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+#res-calculadora {
+    margin-top: 50px;
+    font-size: 15pt;
+}
+
+.container-apresentacao {
+    margin-top: 400px;
+    height: 600px;
+    
+    font-family: sans-serif;
+    border-top: 1px lightgray solid;
+}
+
+.titulo-apresentacao {
+    padding: 50px;
+    font-size: 23pt;
+}
+
+.texto-apresentacao {
+    text-align: start;
+    margin-left: 10vw;
+    width: 80vw;
+
+    font-size: 15pt;
+ 
+}
+
+.container-equipamentos {
+    margin-top: 70px;
+}
+
+.titulo-equipamentos {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25pt;
+}
+
+.equipamentos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.equipamentos img{
+    max-height: 500px;
+    margin: 30px;
+}
+
+.info {
+    margin-top: 60px;
+    background-color: lightgray;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: sans-serif;
+}
+
+.titulo-info {
+    font-size: 17pt;
+}
+
+#email {
+    margin-top: 15px;
+    border: none;
+    padding: 8px;
+
+    border-radius: 15px;
+}
+
+.footer {
+    margin-top: 10px;
+    background-color: rgb(27, 25, 25);
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    padding: 20px;
+}
+
+.footer a:hover {
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;
+        
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        background-color: currentColor;
+        display: block;
+        width: 20px;
+        height: 2px;
+        content: '';
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+
+        top: -7px;
+    }
+
+    #menu {
+        display: none;
+        
+    }
+    #nav.active #menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+
+        top: 3.7rem;
+        right: 0;
+        background-color: #02522a;
+
+        height: 90vh;
+        width: 50vw;
+        transform: translateX(0);
+
+        z-index: 1000;
+        /* overflow-y: auto; */
+    }
+
+    #nav.active #menu li{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 320px) {
+    .texto-principal {
+        position: absolute;
+        top: 13vh;
+        text-align: center;
+        color: white;
+        
+    
+        font-size: 20pt;
+        font-family: sans-serif;
+        font-weight: 600;
+
+        z-index: 100;
+    }
+    
+    .container-planos {
+        height: 1290px;
+    }
+
+    .plano1 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .plano2 {
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container-calculadora {
+        margin-top: 30px;
+    }
+
+    .background-caculadora {
+        padding: 0;
+        width: 100%;
+    }
+
+    .titulo-calculadora {
+        margin-top: 10px;
+    }
+
+    .input-calculadora {
+        margin-left: 7px;
+    }
+
+    .btn-calculadora {
+        margin-left: 110px;
+    }
+
+    #res-calculadora {
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 15pt;
+        margin-bottom: 10px;
+    }
+
+    .equipamentos img{
+        max-width: 100vw;
+        margin: 30px;
+    }
+
+    .container-apresentacao {
+        margin-top: 0;
+    }
+
+    .titulo-apresentacao {
+        padding: 0;
+        font-size: 20pt;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .texto-apresentacao {
+        text-align: start;
+        margin-left: 5vw;
+        width: 85vw;
+        font-size: 13pt;
+        margin-top: 10px;
+    }
+
+    .container-equipamentos {
+        margin-top: 1165px;
+    }    
+
+    .titulo-info {
+        margin-left: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 370px;
+        justify-content: unset;
+    }
+
+    .footer a {
+        margin-top: 15px;
+    }
+}
